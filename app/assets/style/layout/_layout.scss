@@ -1,0 +1,81 @@
+.navbar-brand {
+
+    display: block;
+    width: 174.42px;
+    height: 42px;
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+
+    @include pad {
+        background-image: url("../images/logo2.svg");
+        width: 24px;
+        height: 24px;
+    }
+
+
+}
+
+
+.navbar {
+
+    position: relative;
+
+    &::before {
+        content: '';
+
+        width: 50%;
+        height: 2px;
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+
+
+    }
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
+
+
+    @include pad {
+        &-collapse {
+            position: absolute;
+            top: 98px;
+            left: 0;
+            width: 100%;
+
+            @include pad {
+                top: 74px;
+            }
+        }
+
+
+    }
+
+
+}
+
+.collapse ul {
+    font-size: 18px;
+
+    @include phone {
+        gap: 24px !important;
+
+    }
+}
+

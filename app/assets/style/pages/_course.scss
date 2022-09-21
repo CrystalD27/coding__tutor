@@ -1,0 +1,53 @@
+.course__box {
+    margin-left: 5%;
+    flex-wrap: wrap;
+
+    @include pad {
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+
+    }
+}
+
+
+@include pad {
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px !important;
+
+        &__body {
+            flex-direction: column;
+        }
+
+        &__price {
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            gap: 8px;
+
+        }
+
+        &__join {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 8px;
+        }
+
+        &__tag {
+            padding-top: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__space {
+            padding-right: 0 !important;
+        }
+    }
+
+
+}

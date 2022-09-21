@@ -1,0 +1,459 @@
+.banner {
+  .container-fluid {
+    background-image: url("../images/bg_home.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 90px);
+    background-repeat: no-repeat;
+
+
+    &__dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.navbar {
+  background-image: none;
+}
+
+
+
+.program__keyword {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    background-color: $primary;
+    left: 0;
+    bottom: -20%;
+
+    @include pad {
+      left: 34%;
+      transform: none;
+    }
+
+    @include phone {
+      bottom: -28%;
+    }
+  }
+
+}
+
+.program__details {
+  position: relative;
+  transition: all .5s;
+
+  &:hover {
+    background-color: $dark;
+    transition: all .5s;
+
+    span {
+      background: $gradient;
+      background-clip: text;
+      color: transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $primary;
+      border-radius: 12px;
+    }
+
+  }
+
+
+  .pros__icon {
+    font-size: 50px;
+  }
+}
+
+
+.program__flow {
+  position: relative;
+  margin-bottom: 90px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background-color: $primary;
+    bottom: -16px;
+    left: 38%;
+  }
+}
+
+.program {
+  &__process {
+    position: relative;
+  }
+
+  &__number {
+    position: absolute;
+    font-size: 48px;
+    color: $primary;
+    top: -36px;
+    background: $bg-c;
+  }
+}
+
+.program__here {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background-color: $primary;
+    bottom: -16px;
+    left: 44%;
+
+  }
+}
+
+.program__hot {
+  position: relative;
+  margin-bottom: 64px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background-color: $primary;
+    bottom: -16px;
+    left: 38%;
+
+  }
+}
+
+
+//program__pros//
+
+.program__pros {
+
+
+  .card__content {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $bg-c;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      transition: .5s;
+    }
+
+    &::after {
+      content: '';
+      background-color: $light;
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      left: 50px;
+      top: 316px;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.12;
+        background: #1A1A1A;
+      }
+
+      .pros__icon {
+        color: $primary;
+        opacity: 1;
+      }
+
+      &::after {
+        background-color: $primary;
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .card__pros {
+    position: relative;
+
+    .card__explain {
+      position: absolute;
+      left: 50px;
+      top: 218px;
+
+      .pros__icon {
+        font-size: 28px;
+      }
+
+    }
+  }
+}
+
+/*article*/
+.article__title {
+
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 3px;
+    background-color: $primary;
+    left: 28%;
+    bottom: -20px;
+  }
+}
+
+.article__card {
+  position: relative;
+
+  .squareRounded {
+
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    &-topLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 2px solid $primary;
+      border-left: 2px solid$primary;
+      border-top-left-radius: 10px;
+    }
+
+    &-topRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 2px solid $primary;
+      border-right: 2px solid $primary;
+      border-top-right-radius: 10px;
+    }
+
+    &-bottomLeft {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      border-bottom: 2px solid $primary;
+      border-left: 2px solid $primary;
+      border-bottom-left-radius: 10px;
+    }
+
+    &-bottomRight {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      border-bottom: 2px solid $primary;
+      border-right: 2px solid $primary;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  &:hover {
+    .squareRounded {
+      display: block;
+    }
+  }
+}
+
+.article__img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*feedback*/
+.feedback {
+  background-image: url("../images/bg_share.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      background-color: $primary;
+      bottom: -16px;
+      left: 44%;
+
+      @include pad {
+        left: 110px;
+
+      }
+
+    }
+
+  }
+
+
+}
+
+//feedback-swiper//
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 429px;
+
+  @include pad {
+    height: auto;
+  }
+
+  &-img {
+    position: absolute;
+    width: 54.34%;
+    top: 0;
+    left: 5px;
+
+    @include pad {
+      width: 100%;
+      position: relative;
+      height: 213px;
+      margin-bottom: 80px;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      border: 1px solid #7C7E77;
+      position: absolute;
+      left: -5px;
+      bottom: -10px;
+      z-index: -1;
+    }
+  }
+
+
+  &-share {
+    width: 100%;
+    object-fit: cover;
+
+    @include pad {
+      height: 100%;
+    }
+  }
+}
+
+.feedback {
+  &__card {
+    position: absolute;
+    color: #494755;
+    bottom: 2%;
+    left: 52%;
+    z-index: 1;
+    width: 43.06%;
+    border-radius: 24px 24px 24px 0;
+
+    @include pad {
+      position: relative;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__card__img {
+    position: absolute;
+    top: -30%;
+    right: 5%;
+  }
+}
+
+.swiper-button {
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+
+  @include pad {
+    position: initial;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: initial;
+  margin-top: 0;
+  font-size: 24px;
+  color: $primary;
+  height: 24px;
+  width: 24px;
+
+  // 原本的箭頭是用偽元素 content: 'next' 這個是swiper icon，所以用空白把他刪除
+  &::after {
+    content: "";
+  }
+}
+
+.swiper-pagination {
+  position: initial;
+  display: flex;
+
+
+}
+
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+}
+
+// 更改頁籤點點default的樣式
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: $primary;
+
+}
+
+// 更改頁籤點點active的樣式
+.swiper-pagination-bullet-active {
+
+  background: $primary;
+  width: 16px;
+  height: 8px;
+  border-radius: 100px;
+}
+
+//join//
+
+.join {
+  border-radius: 24px;
+
+  &__details {
+    @include pad {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+}

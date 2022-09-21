@@ -1,0 +1,89 @@
+.timeline {
+    position: relative;
+
+    /*gray line*/
+    &::before {
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #C1C1C1;
+    }
+
+    &__pointer {
+        position: relative;
+        color: #C1C1C1;
+
+        p {
+            padding-top: 24px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #2D2D2D;
+            border: 1px solid #C1C1C1;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+
+        &.step-1::before {
+            content: '1';
+        }
+
+        &.step-2::before {
+            content: '2';
+        }
+
+        &.step-3::before {
+            content: '3';
+        }
+
+        &.active {
+            color: $primary;
+
+
+            &::before {
+                color: $light;
+                background-color: $primary;
+                border: 1px solid $primary;
+            }
+
+        }
+    }
+}
+
+.course {
+    position: absolute;
+    left: 72px;
+    top: 32%;
+}
+
+.order__form {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: transparent;
+    color: #C1C1C1;
+    text-align: left;
+
+}
+
+.order {
+    width: 100%;
+
+    &__name,
+    &__tel,
+    &__course,
+    &__signup {
+        width: 46.6%;
+    }
+
+
+}

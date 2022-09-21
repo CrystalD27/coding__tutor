@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <!-- google symbole -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!--datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark-d p-0">
+    <div class="container ">
+      <h1 class=" py-4"><a class="navbar-brand" href="#">Coding Home</a></h1>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined text-primary">
+          drag_handle
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end bg-dark-d" id="navbarNav">
+        <ul class="navbar-nav gap-6 list-unstyled">
+          <li class="nav-item text-center">
+            <a class="link__color nav-link active text-light" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="link__color nav-link text-light" href="course.html">課程介紹</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="link__color nav-link d-flex text-light" data-bs-toggle="modal" data-bs-target="#modal__login">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+              登入
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  </header>
+  <main>
+    <%- contents %>
+  </main>
+
+  <!-- footer start -->
+  <footer>
+    <div class="contanier-fluid bg-dark-a d-flex justify-content-center align-items-center">
+      <div class="text-gray py-4 ">Coding Home © 2022 All Rights Reserved</div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="modal__login" tabindex="-1" aria-labelledby="modal__loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-dark-d text-light pb-7 pt-4">
+          <div class=" d-flex justify-content-center ">
+            <div class=" modal-header d-flex border-0 ">
+              <h5 class="modal-title " id="modal__loginLabel">登入</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center gap-4 px-16">
+            <div class="form__login">
+              <div class="pb-4 ">
+                <label for="email" class="pb-1">信箱</label>
+                <input class="input__primary w-100" type="email" id="email" placeholder="請輸入信箱">
+              </div>
+              <div class="pb-4">
+                <label for="password" class="pb-1">密碼</label>
+                <input class="input__primary w-100" type="text" id="password" placeholder="請輸入密碼">
+              </div>
+              <div class="pb-7">
+                <div class="btn bg-gradient w-100 border-0 text-light">登入</div>
+              </div>
+              <p class="pb-3 text-center">其他登入方式</p>
+
+              <a class="py-2 border d-flex mb-4 justify-content-center align-items-center
+              text-decoration-none text-light text-center w-100 gap-3 " href="#">
+                <img class="card__img__xs" src="./assets/images/icon_fb.svg" alt="">Facebook
+                登入</a>
+              <a class="py-2 border d-flex text-decoration-none text-light text-center justify-content-center align-items-center gap-3"
+                href="#">
+                <img class="card__img__xs" src="./assets/images/icon_google.svg" alt="">Google 登入</a>
+
+            </div>
+
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
+    <!-- Modal end -->
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- all.js -->
+    <script type="module" src="./assets/js/all.js"></script>
+    <!-- datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+</body>
+
 
 </html>
