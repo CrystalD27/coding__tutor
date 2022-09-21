@@ -1,112 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Boostrap Index
+  </title>
+  <!-- google symbole -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!--datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark-d p-0">
+    <div class="container ">
+      <h1 class=" py-4"><a class="navbar-brand" href="#">Coding Home</a></h1>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined text-primary">
+          drag_handle
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end bg-dark-d" id="navbarNav">
+        <ul class="navbar-nav gap-6 list-unstyled">
+          <li class="nav-item text-center">
+            <a class="link__color nav-link active text-light" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="link__color nav-link text-light" href="course.html">課程介紹</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="link__color nav-link d-flex text-light" data-bs-toggle="modal" data-bs-target="#modal__login">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+              登入
+            </a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
+
+  </header>
+  <main>
     
-<div class="container">
-  <h1 class="index__h1">這是一段話1233333</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<section class="banner ">
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="banner__title text-center position-relative py-lg-7 py-5 px-lg-10 px-4 border border-light">
+      <div class="banner__dot bg-light position-absolute top-0 start-0 translate-middle"></div>
+      <div class="banner__dot bg-light position-absolute top-0 start-100 translate-middle"></div>
+      <div class="banner__dot bg-light position-absolute top-100 start-0 translate-middle"></div>
+      <div class="banner__dot bg-light position-absolute top-100 start-100 translate-middle"></div>
+      <h2 class="gradient-text-custom fs-3 fs-md-1">全台最豐富的程式家教</h2>
+      <h2 class="text-light pb-4 fs-3 fs-md-1">在實踐中化理想為現實</h2>
+      <p class="text-light text-center fs-7 fs-md-5 ">全台最專業師資｜到府程式家教｜客製化課程</p>
+    </div>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+</section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<section class="program__intro">
+  <div class="container-fluid bg-dark-d py-11">
+    <div class="container px-4">
+      <!-- grid system -->
+      <ul class="row gx-4 list-unstyled">
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class=" d-flex flex-column justify-content-center align-items-center h-100 mb-sm-7">
+            <h3 class="program__keyword text-light text-center text-lg-start">手把手帶你 <br>
+              親自到家教到會
+            </h3>
+          </div>
+        </li>
+
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div
+            class="program__details text-center  h-100 d-flex flex-column justify-content-center text-light pt-8 pb-7">
+            <span class="pros__icon pb-6 material-symbols-outlined">
+              code
+            </span>
+            <h5 class="pb-3">超過 100 種專業課程</h5>
+            <p class="fs-5">學習標準化的電腦形式語言<br> 培養運算思維和邏輯素養</p>
+          </div>
+        </li>
+        <li class=" col-lg-3 col-md-6 col-sm-12">
+          <div class="program__details text-center pt-8 pb-7 text-light align-items-center">
+            <span class="pros__icon material-symbols-outlined pb-6">
+              rocket_launch
+            </span>
+            <h5 class="pb-3">高效學習</h5>
+            <p class="fs-5">客製化專屬課表 <br> 讓學習變簡單</p>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div
+            class="program__details text-center h-100 d-flex flex-column justify-content-center text-light pt-8 pb-7 ">
+            <span class="pros__icon material-symbols-outlined pb-6">
+              pin_drop
+            </span>
+            <h5 class="pb-3">指定地點</h5>
+            <p class="fs-5">專業老師到你指定的地點 <br> 一對一高效學習</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+
+<section class="program__steps">
+  <div class="container-fluid bg-dark-c">
+    <div class="container text-light py-11">
+      <div class="d-flex justify-content-center">
+        <h3 class="program__flow ">預期上課流程</h3>
       </div>
-      <div class="modal-body">
-        ...
+      <ul class="row list-unstyled d-flex gx-4 gy-6">
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__process p-7 rounded-12 border">
+            <h4 class="pb-3">預約</h4>
+            <p class="program__number px-2 fw-bold">01</p>
+            <p>線上預約指定課程與老師</p>
+            <p>由老師安排專屬課程</p>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__process p-7 rounded-12 border">
+            <h4 class="pb-3">付款</h4>
+            <p class="program__number  px-2 fw-bold">02</p>
+            <p>支援各種支付方式</p>
+            <p>提供12期分期付款</p>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__process p-7 rounded-12 border">
+            <h4 class="pb-3">上課</h4>
+            <p class="program__number px-2 fw-bold">03</p>
+            <p>地點由您指定</p>
+            <p>密集性一對一教學</p>
+          </div>
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__process p-7 rounded-12 border">
+            <h4 class="pb-3">提供滿意度</h4>
+            <p class="program__number px-2 fw-bold">04</p>
+            <p>提供課程滿意度及回饋</p>
+            <p>讓我們持續成長與進步</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="program__course">
+  <div class="container-fluid bg-dark-d text-light py-11">
+    <div class="d-flex justify-content-center ">
+      <h3 class="program__here mb-9">你想要學習的程式，都在這裡</h3>
+    </div>
+    <ul class="list-unstyled d-flex gap-3 overflow-auto">
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">
+          JavaScript
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">HTML/CSS
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">SQL
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">Java
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">Bash/Shell
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">Python</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">Python
+        </a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+        <a class="link-light text-decoration-none fw-bold" href="#">PHP</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">PHP>C++</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">PHP>SQL</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">Python</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">Python</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">PHP</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">PHP>C++</a>
+      </li>
+      <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a class="link-light text-decoration-none fw-bold"
+          href="#">PHP>SQL</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="program__popularCourse">
+  <div class="container-fluid bg-dark ">
+    <div class="container text-light py-11">
+      <div class="d-flex justify-content-center">
+        <h3 class="program__hot">熱門推薦課程</h3>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <ul class="row gx-4 list-unstyled d-flex gy-4">
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__card  text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+              <img class="card__img__s pb-2 rounded-circle" src="./assets/images/teacher01.jpg" alt="teacher01">
+              <p class="pb-4">Belinda</p>
+              <div>
+                <h5 class="pb-5">基礎前端 - HTML</h5>
+                <p class="pb-2 text-primary">前端語言</p>
+                <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+              <p class="pe-2">50分鐘</p>
+              <p class="fs-2">NT$1600</p>
+            </div>
+          </div>
+
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__card  text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+              <img class="card__img__s pb-2 rounded-circle" src="./assets/images/teacher02.jpg" alt="teacher01">
+              <p class="pb-4">Guava</p>
+              <div>
+                <h5 class="pb-2">2022 Python 全攻略｜從入門到實務</h5>
+                <p class="pb-2 text-primary">後端語言</p>
+                <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+              <p class="pe-2">50分鐘</p>
+              <p class="fs-2">NT$2200</p>
+            </div>
+          </div>
+
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__card  text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+              <img class="card__img__s pb-2 rounded-circle" src="./assets/images/teacher03.jpg" alt="teacher03">
+              <p class="pb-4">Joe</p>
+              <div>
+                <h5 class="pb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                <p class="pb-2 text-primary">行動應用開發</p>
+                <p>Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+              <p class="pe-2">50分鐘</p>
+              <p class="fs-2">NT$1800</p>
+            </div>
+          </div>
+
+        </li>
+        <li class="col-lg-3 col-md-6 col-sm-12">
+          <div class="program__card text-light  bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+              <img class="card__img__s pb-2 rounded-circle" src="./assets/images/teacher04.jpg" alt="teacher04">
+              <p class="pb-4">Lina</p>
+              <div>
+                <h5 class="pb-2">Linux 零基礎七天入門｜入門到實務</h5>
+                <p class="pb-2 text-primary">作業系統與伺服器</p>
+                <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+              <p class="pe-2">50分鐘</p>
+              <p class="fs-2">NT$1100</p>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center mt-7">
+        <button class="btn btn-outline-light bg-gradient px-5 py-2 border-0 text-light">所有課程列表</button>
       </div>
     </div>
   </div>
-</div>
 
-    <footer class="footer">
-      footer
-    </footer>
+</section>
+
+<section class="program__pros container-fluid bg-dark-c">
+  <ul class=" row d-flex list-unstyled text-light g-0">
+    <li class="card__pros col-lg-3 col-md-6 col-sm-12">
+      <div class="card__content">
+        <img class="card__img__lg" src=".//assets/images/info01.jpg" alt="info01">
+        <div class="card__explain">
+          <span class="pros__icon material-symbols-outlined">
+            forum
+          </span>
+          <h4 class="card__title mt-4 mb-7 ">對症下藥，專案製作</h4>
+          <p calss="card__text">除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
+        </div>
+      </div>
+    </li>
+    <li class="card__pros col-lg-3 col-md-6 col-sm-12">
+      <div class="card__content">
+        <img class="card__img__lg" src=".//assets/images/info02.jpg" alt="info02">
+        <div class="card__explain">
+          <span class="pros__icon material-symbols-outlined">
+            tips_and_updates
+          </span>
+          <h4 class="card__title mt-4 mb-7">激發你的學習潛力</h4>
+          <p calss="card__text">進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>
+        </div>
+      </div>
+
+    </li>
+    <li class="card__pros col-lg-3 col-md-6 col-sm-12">
+      <div class="card__content">
+        <img class="card__img__lg" src=".//assets/images/info03.jpg" alt="info03">
+        <div class="card__explain">
+          <span class="pros__icon material-symbols-outlined">
+            thumb_up
+          </span>
+          <h4 class="card__title mt-4 mb-7">學習效率</h4>
+          <p calss="card__text">針對學員狀況調整內容與步調<br>學習精準最有效</p>
+        </div>
+      </div>
+    </li>
+    <li class="card__pros col-lg-3 col-md-6 col-sm-12">
+      <div class="card__content">
+        <img class="card__img__lg" src=".//assets/images/info04.jpg" alt="info04">
+        <div class="card__explain">
+          <span class="pros__icon material-symbols-outlined">
+            supervisor_account
+          </span>
+          <h4 class="card__title mt-4 mb-7">一對一指導</h4>
+          <p calss="card__text">針對目的進行客製化課程安排<br>快速的學以致用</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="article">
+  <div class="container-fluid bg-dark-d py-11 ">
+    <div class="container text-light">
+      <div class="d-flex justify-content-center align-items-center">
+        <h3 class="article__title mb-9">文章分享</h3>
+      </div>
+      <ul class="row d-flex list-unstyled">
+        <li class="col-lg-4 col-md-12">
+          <div class="article__card p-5">
+            <div class="squareRounded squareRounded-topLeft"></div>
+            <div class="squareRounded squareRounded-topRight"></div>
+            <div class="squareRounded squareRounded-bottomLeft"></div>
+            <div class="squareRounded squareRounded-bottomRight"></div>
+            <img class="article__img mb-3 " src=".//assets/images/article01.jpg" alt="article01">
+            <h6 class="mb-3">2022 前端開發者學習地圖</h6>
+            <p class="mb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+            <div class="text-primary fs-6 d-block text-end btn">MORE</div>
+          </div>
+        </li>
+        <li class="col-lg-4 col-md-12">
+          <div class="article__card p-5">
+            <div class="squareRounded squareRounded-topLeft"></div>
+            <div class="squareRounded squareRounded-topRight"></div>
+            <div class="squareRounded squareRounded-bottomLeft"></div>
+            <div class="squareRounded squareRounded-bottomRight"></div>
+            <img class="article__img mb-3" src=".//assets/images/article02.jpg" alt="article02">
+            <h6 class="mb-3">軟體工程師有哪些類別</h6>
+            <p class="mb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+            <div class="text-primary fs-6 d-block text-end btn">MORE</div>
+          </div>
+        </li>
+        <li class="col-lg-4 col-md-12">
+          <div class="article__card p-5">
+            <div class="squareRounded squareRounded-topLeft"></div>
+            <div class="squareRounded squareRounded-topRight"></div>
+            <div class="squareRounded squareRounded-bottomLeft"></div>
+            <div class="squareRounded squareRounded-bottomRight"></div>
+            <img class="article__img mb-3" src=".//assets/images/article03.jpg" alt="article03">
+            <h6 class="mb-3">免費 25 小時前端教學資源</h6>
+            <p class="mb-3">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
+            <div class=" text-primary fs-6 d-block text-end btn">MORE</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="feedback">
+  <div class="container text-light py-11">
+    <div class="d-flex justify-content-center align-items-center text-center px-6">
+      <h3 class="feedback__title mb-9">專屬你的學習課程 <br /> 超過 3000 位學員得到了程式超能力</h3>
+    </div>
+
+    <ul class="row list-unstyled justify-content-center">
+      <li class="col-9">
+        <div class="swiper commentSwiper">
+          <div class="swiper-wrapper">
+            <!--slide 1 -->
+            <div class="swiper-slide">
+              <!-- share pic01 -->
+              <div class="swiper-img">
+                <img class="swiper-share rounded-24" src=".//assets/images/share01.jpg" alt="share">
+              </div>
+              <!-- feedback student01 -->
+              <div class="feedback__card p-5 border bg-light text-index">
+                <img class="feedback__card__img card__img__s rounded-circle" src=".//assets/images/student01.jpg"
+                  alt="student01">
+                <h6 class="pb-3 fw-bold">老師很有耐心</h6>
+                <p class="">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide">
+              <!-- share pic02 -->
+              <div class="swiper-img">
+                <img class="swiper-share rounded-24" src=".//assets/images/share02.jpg" alt="share">
+              </div>
+              <!-- feedback student02 -->
+              <div class="feedback__card p-5 border bg-light text-index">
+                <img class="feedback__card__img rounded-circle" src=".//assets/images/student02.jpg" alt="student01">
+                <h6 class="pb-3 fw-bold">謝謝老師及同學！</h6>
+                <p class="">很喜歡這邊的社群，儘管是遠端，但是在上面問助教或同學問題，大家都可以一起互相幫忙進步很棒！</p>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="swiper-slide">
+              <!-- share pic03 -->
+              <div class="swiper-img">
+                <img class="swiper-share rounded-24" src=".//assets/images/share03.jpg" alt="share">
+              </div>
+              <!-- feedback student03 -->
+              <div class="feedback__card p-5 border bg-light text-index">
+                <img class="feedback__card__img rounded-circle" src=".//assets/images/student03.jpg" alt="student01">
+                <h6 class="pb-3 fw-bold">感謝當初自己有報名這邊的課程</h6>
+                <p class="">在兩個月前，我還是連code什麼都不會的人，參加體驗營後，覺得很有成就感，能看到畫面真實呈現在網頁上很有成就感。</p>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="swiper-slide">
+              <!-- share pic04 -->
+              <div class="swiper-img">
+                <img class="swiper-share rounded-24" src=".//assets/images/share04.jpg" alt="share">
+              </div>
+              <!-- feedback student04 -->
+              <div class="feedback__card p-5 border bg-light text-index">
+                <img class="feedback__card__img rounded-circle" src=".//assets/images/student04.jpg" alt="student01">
+                <h6 class="pb-3 fw-bold">非常充實</h6>
+                <p class="">當初進來就是為了即刻的增加自己的實力，也學到很多切版的能力，速度也變快了，成了偽元素達人哈哈。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button d-flex align-items-center">
+            <!--  navigation buttons -->
+            <span class="material-symbols-outlined swiper-button-prev">west</span>
+            <!-- pagination -->
+            <div class="swiper-pagination">
+            </div>
+            <div class="material-symbols-outlined swiper-button-next">east</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</section>
+<section class="join">
+  <div class="container-fluid py-11 bg-dark d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-9 col-md-12">
+          <div
+            class="join__details d-flex justify-content-between align-items-center p-lg-7 p-sm-4 bg-index text-light rounded-24 py-6 px-4">
+            <span class="fs-106  material-symbols-outlined ">
+              menu_book
+            </span>
+            <div class="join__title  d-flex flex-column text-lg-start text-center px-md-3">
+              <h2 class="pb-2">加入我們成為導師</h2>
+              <p class="">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+            </div>
+            <button class="btn btn-outline-light bte-white-space px-5 py-2 white-space-nowrap">立即預約</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+  </main>
+
+  <!-- footer start -->
+  <footer>
+    <div class="contanier-fluid bg-dark-a d-flex justify-content-center align-items-center">
+      <div class="text-gray py-4 ">Coding Home © 2022 All Rights Reserved</div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="modal__login" tabindex="-1" aria-labelledby="modal__loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-dark-d text-light pb-7 pt-4">
+          <div class=" d-flex justify-content-center ">
+            <div class=" modal-header d-flex border-0 ">
+              <h5 class="modal-title " id="modal__loginLabel">登入</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center gap-4 px-16">
+            <div class="form__login">
+              <div class="pb-4 ">
+                <label for="email" class="pb-1">信箱</label>
+                <input class="input__primary w-100" type="email" id="email" placeholder="請輸入信箱">
+              </div>
+              <div class="pb-4">
+                <label for="password" class="pb-1">密碼</label>
+                <input class="input__primary w-100" type="text" id="password" placeholder="請輸入密碼">
+              </div>
+              <div class="pb-7">
+                <div class="btn bg-gradient w-100 border-0 text-light">登入</div>
+              </div>
+              <p class="pb-3 text-center">其他登入方式</p>
+
+              <a class="py-2 border d-flex mb-4 justify-content-center align-items-center
+              text-decoration-none text-light text-center w-100 gap-3 " href="#">
+                <img class="card__img__xs" src="./assets/images/icon_fb.svg" alt="">Facebook
+                登入</a>
+              <a class="py-2 border d-flex text-decoration-none text-light text-center justify-content-center align-items-center gap-3"
+                href="#">
+                <img class="card__img__xs" src="./assets/images/icon_google.svg" alt="">Google 登入</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- all.js -->
+    <script type="module" src="./assets/js/all.js"></script>
+    <!-- datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+</body>
+
 
 </html>

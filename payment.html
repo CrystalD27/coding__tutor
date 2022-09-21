@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Boostrap payment
+  </title>
+  <!-- google symbole -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!--datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark-d p-0">
+    <div class="container ">
+      <h1 class=" py-4"><a class="navbar-brand" href="#">Coding Home</a></h1>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined text-primary">
+          drag_handle
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end bg-dark-d" id="navbarNav">
+        <ul class="navbar-nav gap-6 list-unstyled">
+          <li class="nav-item text-center">
+            <a class="link__color nav-link active text-light" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="link__color nav-link text-light" href="course.html">課程介紹</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="link__color nav-link d-flex text-light" data-bs-toggle="modal" data-bs-target="#modal__login">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+              登入
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  </header>
+  <main>
+    
+<section class="payment">
+    <div class="container-flluid bg-dark-c pt-7 pb-3">
+        <div class="container">
+            <div class="row list-unstyled text-light justify-content-center align-items-center ">
+                <div class="col-7 timeline">
+                </div>
+            </div>
+            <div class="row text-light">
+                <div class="col-5">
+                    <div class="timeline__pointer text-center step-1 active ">
+                        <p>課程報名</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="timeline__pointer text-center step-2">
+                        <p>信用卡付款</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="timeline__pointer text-center step-3">
+                        <p>付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="registration">
+
+    <div class="container-fluid bg-dark pt-7 pb-15">
+        <div class="container">
+            <ul class="row text-light list-unstyled  d-flex justify-content-end position-relative">
+                <li class="course col-4 p-0">
+                    <div class="course__teacher d-flex flex-column py-7 px-5 bg-dark-d">
+                        <div class="intro__img d-flex flex-column align-items-center">
+                            <img src=".//assets/images/teacher01.jpg" class="card__img__s mb-2" alt="teacher01">
+
+                        </div>
+                        <div class="intro__body ">
+                            <div class="intro__description d-flex flex-column align-items-center ">
+                                <h6 class="pb-1">2022 Python 全攻略｜從入門到實務</h6>
+                                <p class="pb-2 text-primary">前端語言</p>
+                                <p class="intro__space ">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-8 p-0">
+                    <div class="py-7  bg-dark-c  ps-14 pe-5 ">
+                        <div class="d-flex justify-content-center pb-7">
+                            <h4>課程報名</h4>
+                        </div>
+                        <h5 class="pb-1"> 選擇付款方式 </h5>
+                        <ul class="list-unstyled d-flex gap-3 pt-5">
+                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
+                                    href="">信用卡付款</a></li>
+                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
+                                    href="">超商繳款</a></li>
+                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
+                                    href="">ATM轉帳</a></li>
+                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
+                                    href="">12期分期付款</a></li>
+                        </ul>
+
+                        <h5 class="pt-5 pb-4"> 訂單資訊 </h5>
+                        <div class="order d-flex justify-content-between pb-4">
+                            <div class="order__name">
+                                <label for="name" name="name" class="pb-1">姓名</label>
+                                <br>
+                                <input type="text" class="order__form" name="name" id="name" placeholder="請輸入姓名">
+                            </div>
+                            <div class="order__tel">
+                                <label for="tel" name="tel" class="pb-1">電話</label>
+                                <br>
+                                <input type="tel" class="order__form" name="tel" id="tel" placeholder="請輸入電話號碼">
+                            </div>
+
+                        </div>
+                        <div class="order__email pb-4">
+                            <label for="email" name="email" class="pb-1">Email</label>
+
+                            <input type="email" class="order__form" name="email" id="email" placeholder="請輸入Email">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="order__course dropdown pb-4">
+                                <label for="course" name="course" class="pb-1">課程</label>
+
+                                <a class="btn btn-secondary dropdown-toggle order__form" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    10堂50分鐘
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">10堂100分鐘</a></li>
+                                    <li><a class="dropdown-item" href="#">20堂50分鐘</a></li>
+                                    <li><a class="dropdown-item" href="#">20堂100分鐘</a></li>
+                                </ul>
+                            </div>
+                            <div class="order__signup">
+                                <label for="sign-up" class="pb-1">想預約日期</label>
+
+                                <input class="order__form" type="text" placeholder="請選擇日期" name="datepicker">
+                            </div>
+                        </div>
+                        <div class="location pb-4">
+                            <label for="location" name="location" class="pb-1">上課地點</label>
+
+                            <input type="text" class="order__form" name="location" id="location" placeholder="請輸入上課地點">
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="fs-4">NT1600</p>
+                            <button class="btn btn-light border-0 text-light">前往結帳</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+  </main>
+
+  <!-- footer start -->
+  <footer>
+    <div class="contanier-fluid bg-dark-a d-flex justify-content-center align-items-center">
+      <div class="text-gray py-4 ">Coding Home © 2022 All Rights Reserved</div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="modal__login" tabindex="-1" aria-labelledby="modal__loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-dark-d text-light pb-7 pt-4">
+          <div class=" d-flex justify-content-center ">
+            <div class=" modal-header d-flex border-0 ">
+              <h5 class="modal-title " id="modal__loginLabel">登入</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center gap-4 px-16">
+            <div class="form__login">
+              <div class="pb-4 ">
+                <label for="email" class="pb-1">信箱</label>
+                <input class="input__primary w-100" type="email" id="email" placeholder="請輸入信箱">
+              </div>
+              <div class="pb-4">
+                <label for="password" class="pb-1">密碼</label>
+                <input class="input__primary w-100" type="text" id="password" placeholder="請輸入密碼">
+              </div>
+              <div class="pb-7">
+                <div class="btn bg-gradient w-100 border-0 text-light">登入</div>
+              </div>
+              <p class="pb-3 text-center">其他登入方式</p>
+
+              <a class="py-2 border d-flex mb-4 justify-content-center align-items-center
+              text-decoration-none text-light text-center w-100 gap-3 " href="#">
+                <img class="card__img__xs" src="./assets/images/icon_fb.svg" alt="">Facebook
+                登入</a>
+              <a class="py-2 border d-flex text-decoration-none text-light text-center justify-content-center align-items-center gap-3"
+                href="#">
+                <img class="card__img__xs" src="./assets/images/icon_google.svg" alt="">Google 登入</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- all.js -->
+    <script type="module" src="./assets/js/all.js"></script>
+    <!-- datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+</body>
+
+
+</html>
