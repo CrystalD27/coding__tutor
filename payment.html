@@ -27,7 +27,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark-d p-0">
     <div class="container ">
-      <h1 class=" py-4"><a class="navbar-brand" href="#">Coding Home</a></h1>
+      <h1 class=" py-4"><a class="navbar-brand" href="index.html">Coding Home</a></h1>
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="material-symbols-outlined text-primary">
@@ -61,7 +61,7 @@
   <main>
     
 <section class="payment">
-    <div class="container-flluid bg-dark-c pt-7 pb-3">
+    <div class="payment__progress container-flluid pt-7 pb-3">
         <div class="container">
             <div class="row list-unstyled text-light justify-content-center align-items-center ">
                 <div class="col-7 timeline">
@@ -92,15 +92,16 @@
 
     <div class="container-fluid bg-dark pt-7 pb-15">
         <div class="container">
-            <ul class="row text-light list-unstyled  d-flex justify-content-end position-relative">
-                <li class="course col-4 p-0">
+            <ul
+                class="row text-light list-unstyled  d-flex flex-column flex-lg-row justify-content-lg-end position-lg-relative">
+                <li class="course col-lg-4 col-12 p-0">
                     <div class="course__teacher d-flex flex-column py-7 px-5 bg-dark-d">
                         <div class="intro__img d-flex flex-column align-items-center">
                             <img src=".//assets/images/teacher01.jpg" class="card__img__s mb-2" alt="teacher01">
 
                         </div>
                         <div class="intro__body ">
-                            <div class="intro__description d-flex flex-column align-items-center ">
+                            <div class="intro__description d-flex  flex-column align-items-center ">
                                 <h6 class="pb-1">2022 Python 全攻略｜從入門到實務</h6>
                                 <p class="pb-2 text-primary">前端語言</p>
                                 <p class="intro__space ">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
@@ -108,21 +109,21 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-8 p-0">
-                    <div class="py-7  bg-dark-c  ps-14 pe-5 ">
+                <li class="col-lg-8 col-12 p-0">
+                    <div class="py-7  bg-dark-c  ps-lg-14 pe-lg-5 px-3 ">
                         <div class="d-flex justify-content-center pb-7">
                             <h4>課程報名</h4>
                         </div>
                         <h5 class="pb-1"> 選擇付款方式 </h5>
-                        <ul class="list-unstyled d-flex gap-3 pt-5">
-                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
-                                    href="">信用卡付款</a></li>
-                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
-                                    href="">超商繳款</a></li>
-                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
-                                    href="">ATM轉帳</a></li>
-                            <li class="py-3 px-5 border rounded-8"><a class="text-decoration-none text-light"
-                                    href="">12期分期付款</a></li>
+                        <ul class="list-unstyled d-flex gap-lg-3 gap-1 pt-5 flex-wrap">
+                            <li class="py-3 px-5 border rounded-8 pay__bottom  "><a
+                                    class="text-decoration-none text-light" href="">信用卡付款</a></li>
+                            <li class="py-3 px-5 border rounded-8 pay__bottom"><a
+                                    class="text-decoration-none text-light" href="">超商繳款</a></li>
+                            <li class="py-3 px-5 border rounded-8 pay__bottom"><a
+                                    class="text-decoration-none text-light" href="">ATM轉帳</a></li>
+                            <li class="py-3 px-5 border rounded-8 pay__bottom"><a
+                                    class="text-decoration-none text-light" href="">12期分期付款</a></li>
                         </ul>
 
                         <h5 class="pt-5 pb-4"> 訂單資訊 </h5>
@@ -200,9 +201,9 @@
       <div class="modal-content">
         <div class="bg-dark-d text-light pb-7 pt-4">
           <div class=" d-flex justify-content-center ">
-            <div class=" modal-header d-flex border-0 ">
-              <h5 class="modal-title " id="modal__loginLabel">登入</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class=" modal-header  d-flex border-0 ">
+              <h5>登入</h5> 
+              <span class=" material-symbols-outlined modal-title btn__close" data-bs-dismiss="modal" aria-label="Close"  id="modal__loginLabel">close</span>
             </div>
           </div>
           <div class="modal-body d-flex flex-column align-items-center gap-4 px-16">
