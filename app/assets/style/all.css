@@ -18250,6 +18250,12 @@ fieldset:disabled .btn {
   }
 }
 
+.program__card:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #62DB54;
+}
+
 *,
 *::before,
 *::after {
@@ -18268,20 +18274,10 @@ p {
   padding: 0;
 }
 
-a {
-  display: block;
-  color: inherit;
-}
-
 a:hover {
-  color: inherit;
-}
-
-.btn-light {
-  color: #62DB54;
-  background-color: #1C1C1C;
-  border-color: #62DB54;
-  cursor: pointer;
+  color: #62DB54 !important;
+  background-color: transparent !important;
+  border-color: #62DB54 !important;
 }
 
 .card__img__xs {

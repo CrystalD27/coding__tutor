@@ -27,3 +27,9 @@
         width: 48%;
     }
 }
+
+.program__card:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $primary;
+}
