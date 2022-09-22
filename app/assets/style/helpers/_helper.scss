@@ -8,31 +8,6 @@
     color: transparent;
 }
 
-.card__img__xs {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-}
-
-.card__img__s {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    object-fit: cover;
-}
-
-.card__img__lg {
-    height: 615px;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-a:hover {
-    color: $primary  !important;
-    background-color: transparent !important;
-    border-color: $primary  !important;
-}
 
 .form__login {
     width: 331px;
@@ -45,4 +20,10 @@ a:hover {
     border: 1px solid $white;
     color: #C1C1C1;
     padding: 8px 16px;
+}
+
+.pay__bottom {
+    @include phone {
+        width: 48%;
+    }
 }

@@ -1,3 +1,13 @@
+.payment {
+    &__progress {
+        background: #1C1C1C;
+
+        @include pad {
+            background: #000000;
+        }
+    }
+}
+
 .timeline {
     position: relative;
 
@@ -59,8 +69,14 @@
 
 .course {
     position: absolute;
-    left: 72px;
-    top: 32%;
+    left: 8%;
+    top: 55%;
+
+    @include pad {
+        position: initial;
+        margin-bottom: 32px;
+
+    }
 }
 
 .order__form {

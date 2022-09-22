@@ -1,0 +1,146 @@
+
+/*modal*/
+.btn__close{
+    position:absolute;
+    right:15px;
+    top:32px;
+    cursor:pointer;
+}
+
+/*feedback-swiper*/
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 429px;
+  
+    @include pad {
+      height: auto;
+    }
+  
+    &-img {
+      position: absolute;
+      width: 54.34%;
+      top: 0;
+      left: 5px;
+  
+      @include pad {
+        width: 100%;
+        position: relative;
+        height: 213px;
+        margin-bottom: 80px;
+      }
+  
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        border: 1px solid #7C7E77;
+        position: absolute;
+        left: -5px;
+        bottom: -10px;
+        z-index: -1;
+      }
+    }
+  
+  
+    &-share {
+      width: 100%;
+      object-fit: cover;
+  
+      @include pad {
+        height: 100%;
+      }
+    }
+  }
+  
+  .feedback {
+    &__card {
+      position: absolute;
+      color: #494755;
+      bottom: 2%;
+      left: 52%;
+      z-index: 1;
+      width: 43.06%;
+      border-radius: 24px 24px 24px 0;
+  
+      @include pad {
+        position: relative;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  
+    &__card__img {
+      position: absolute;
+      top: -30%;
+      right: 5%;
+    }
+  }
+  
+  .swiper-button {
+    position: absolute;
+    bottom: 2%;
+    left: 20%;
+  
+    @include pad {
+      position: initial;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: initial;
+    margin-top: 0;
+    font-size: 24px;
+    color: $primary;
+    height: 24px;
+    width: 24px;
+  
+    // 原本的箭頭是用偽元素 content: 'next' 這個是swiper icon，所以用空白把他刪除
+    &::after {
+      content: "";
+    }
+  }
+  
+  .swiper-pagination {
+    position: initial;
+    display: flex;
+  
+  
+  }
+  
+  
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto;
+  }
+  
+  // 更改頁籤點點default的樣式
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background: $primary;
+  
+  }
+  
+  // 更改頁籤點點active的樣式
+  .swiper-pagination-bullet-active {
+  
+    background: $primary;
+    width: 16px;
+    height: 8px;
+    border-radius: 100px;
+  }
+
+  /*datepicker*/
+.datepicker-picker{
+    color: black;
+}

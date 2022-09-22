@@ -125,6 +125,18 @@ $utilities: map-merge($utilities, ("opacity": (property: opacity,
                     circle: 50%,
                     pill: $border-radius-pill )),
 
+                    "white-space": (
+                        property: white-space,
+                        class: ws,
+                        values: (
+                        wrap: normal,
+                          nowrap: nowrap,
+                          pre: pre,
+                         pre-line: pre-line,
+                         pre-wrap: pre-wrap
+                    )
+                      ),
+
         ));
 // $utilities: map-merge(
 //     $utilities,(
@@ -177,17 +189,7 @@ $utilities: map-merge($utilities, ("opacity": (property: opacity,
 //           class: self,
 //         )
 //       ),
-//       "white-space": (
-//         property: white-space,
-//         class: ws,
-//         values: (
-//           wrap: normal,
-//           nowrap: nowrap,
-//           pre: pre,
-//           pre-line: pre-line,
-//           pre-wrap: pre-wrap
-//         )
-//       ),
+    
 
 //       "overflow": map-merge(
 //         map-get($utilities,"overflow"),(
