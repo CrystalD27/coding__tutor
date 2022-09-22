@@ -18597,6 +18597,10 @@ a:hover {
   }
 }
 
+.navbar-collapse {
+  z-index: 5;
+}
+
 .collapse ul {
   font-size: 18px;
 }
@@ -18605,13 +18609,6 @@ a:hover {
   .collapse ul {
     gap: 24px !important;
   }
-}
-
-.btn__close {
-  position: absolute;
-  right: 15px;
-  top: 32px;
-  cursor: pointer;
 }
 
 .banner .container-fluid, .banner .container-sm, .banner .container-md, .banner .container-lg, .banner .container-xl, .banner .container-xxl {
