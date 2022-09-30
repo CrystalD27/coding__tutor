@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -18332,6 +18333,11 @@ fieldset:disabled .btn {
   }
 }
 
+.program__card {
+  border: 1px solid transparent;
+  /*先有border寬度，後續使用hover可以避免跳動*/
+}
+
 .program__card:hover {
   cursor: pointer;
   background-color: transparent;
@@ -18357,9 +18363,9 @@ p {
 }
 
 a:hover {
-  color: #62DB54 !important;
-  background-color: transparent !important;
-  border-color: #62DB54 !important;
+  color: #62DB54;
+  cursor: pointer;
+  /*增加cursor:pointer 登入才會有箭頭？*/
 }
 
 .card__img__xs {
@@ -18389,6 +18395,14 @@ a:hover {
   right: 15px;
   top: 32px;
   cursor: pointer;
+}
+
+/*button*/
+.btn-outline-dark:hover {
+  border-color: #62DB54;
+  color: #62DB54;
+  background-color: transparent;
+  /*如何蓋li:border-color, color// html&bs5 取捨*/
 }
 
 /*feedback-swiper*/
@@ -18607,6 +18621,15 @@ a:hover {
   }
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #62DB54;
+}
+
+/*需要改navbar 原設定*/
 .banner .container-fluid, .banner .container-sm, .banner .container-md, .banner .container-lg, .banner .container-xl, .banner .container-xxl {
   background-image: url("../images/bg_home.jpg");
   background-position: center;
@@ -18821,7 +18844,7 @@ a:hover {
 }
 
 .article__card .squareRounded {
-  display: none;
+  opacity: 0;
   width: 32px;
   height: 32px;
 }
@@ -18863,7 +18886,11 @@ a:hover {
 }
 
 .article__card:hover .squareRounded {
-  display: block;
+  opacity: 1;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  /*使用opacity+transition 可以讓畫面更自然，可以取代disply:none & block 得使用*/
 }
 
 .article__img {
