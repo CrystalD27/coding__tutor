@@ -28,8 +28,13 @@
     }
 }
 
-.program__card:hover {
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid $primary;
+.program__card {
+    border: 1px solid transparent;
+
+    /*先有border寬度，後續使用hover可以避免跳動*/
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $primary;
+    }
 }

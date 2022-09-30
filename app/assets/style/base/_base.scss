@@ -30,9 +30,9 @@ p {
 }
 
 a:hover {
-    color: $primary  !important;
-    background-color: transparent !important;
-    border-color: $primary  !important;
+    color: $primary;
+    cursor: pointer;
+    /*增加cursor:pointer 登入才會有箭頭？*/
 }
 
 

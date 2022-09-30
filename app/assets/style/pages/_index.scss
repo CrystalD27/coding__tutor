@@ -225,7 +225,7 @@
 
   .squareRounded {
 
-    display: none;
+    opacity: 0;
     width: 32px;
     height: 32px;
 
@@ -268,7 +268,10 @@
 
   &:hover {
     .squareRounded {
-      display: block;
+      opacity: 1;
+      transition: all .5s;
+
+      /*使用opacity+transition 可以讓畫面更自然，可以取代disply:none & block 得使用*/
     }
   }
 }
